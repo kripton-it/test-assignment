@@ -36,7 +36,7 @@
 yarn install
 ```
 
-or
+или
 
 ```bash
 npm install
@@ -48,7 +48,7 @@ npm install
 yarn server
 ```
 
-or
+или
 
 ```bash
 npm run server
