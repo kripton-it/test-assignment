@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
+import { BooksListContainer } from './styles';
+
 class Test extends React.Component {
   constructor() {
     super();
@@ -21,7 +23,11 @@ class Test extends React.Component {
     if (isLoading) {
       return <h1>...loading</h1>;
     }
-    return booksList.map(book => <p>{book.title}</p>)
+    return (
+      <BooksListContainer>
+        {booksList.map(book => <p>{book.synopsis}</p>)}
+      </BooksListContainer>
+    );
   }
 }
 
