@@ -1,16 +1,10 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-export const BookItemContainer = styled.li`
+export const BookContainer = styled.div`
   outline: 1px solid green;
-  flex-basis: 20%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
-`;
-
-export const BookLink = styled(Link)`
-  text-decoration: none;
+  align-items: center; */
 `;
 
 export const BookItemTitle = styled.h1`

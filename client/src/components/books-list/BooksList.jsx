@@ -27,7 +27,7 @@ class BooksList extends React.Component {
     }
     return (
       <BooksListContainer>
-        {booksList.map(book => <BookItem book={book} />)}
+        {booksList.map(book => <BookItem key={book.slug} book={book} />)}
       </BooksListContainer>
     );
   }
