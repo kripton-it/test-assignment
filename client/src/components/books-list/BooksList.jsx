@@ -1,9 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 
+import { BookItem } from '../index';
+
 import { BooksListContainer } from './styles';
 
-class Test extends React.Component {
+class BooksList extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -25,10 +27,10 @@ class Test extends React.Component {
     }
     return (
       <BooksListContainer>
-        {booksList.map(book => <p>{book.synopsis}</p>)}
+        {booksList.map(book => <BookItem book={book} />)}
       </BooksListContainer>
     );
   }
 }
 
-export default Test;
+export default BooksList;
