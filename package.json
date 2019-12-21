@@ -1,0 +1,30 @@
+{
+  "name": "test-assignment",
+  "version": "1.0.0",
+  "description": "На основе макета **images/preview.jpg** реализовать разметку и стили страницы.",
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.4.1"
+  },
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "cd server && yarn server",
+    "build": "cd client && npm run build",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "test-client": "cd client && yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kripton-it/test-assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kripton-it/test-assignment/issues"
+  },
+  "homepage": "https://github.com/kripton-it/test-assignment#readme",
+  "dependencies": {
+    "concurrently": "^5.0.2"
+  }
+}
