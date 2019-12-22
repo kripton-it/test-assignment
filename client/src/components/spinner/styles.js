@@ -20,6 +20,8 @@ export const SpinnerContainer = styled.div`
   background-color: #ffffff;
 `;
 
+SpinnerContainer.displayName = 'SpinnerContainer';
+
 export const SpinnerBody = styled.div`
   color: #2f4a8f;
   display: flex;
@@ -27,9 +29,11 @@ export const SpinnerBody = styled.div`
   justify-content: center;
 
   &::after {
-    animation: ${changeContent} .2s linear infinite;
+    animation: ${changeContent} .5s linear infinite;
     display: block;
     content: "⠋";
     font-size: 80px;
   }
 `;
+
+SpinnerBody.displayName = 'SpinnerBody';

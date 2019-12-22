@@ -9,6 +9,8 @@ export const BookItemContainer = styled.li`
   align-items: center;
 `;
 
+BookItemContainer.displayName = 'BookItemContainer';
+
 export const BookTitleLink = styled(Link)`
   color: #000000;
   opacity: 0.8;
@@ -19,6 +21,8 @@ export const BookTitleLink = styled(Link)`
   }
 `;
 
+BookTitleLink.displayName = 'BookTitleLink';
+
 export const BookItemTitle = styled.h1`
   margin: 0;
   margin-bottom: 5px;
@@ -26,12 +30,16 @@ export const BookItemTitle = styled.h1`
   font-size: 1.2rem;
 `;
 
+BookItemTitle.displayName = 'BookItemTitle';
+
 export const BookItemAuthor = styled.h2`
   color: #777777;
   font-size: 1rem;
   margin: 0;
   padding: 0;
 `;
+
+BookItemAuthor.displayName = 'BookItemAuthor';
 
 export const BookCoverLink = styled(Link)`
   opacity: 0.7;
@@ -42,10 +50,14 @@ export const BookCoverLink = styled(Link)`
   }
 `;
 
+BookCoverLink.displayName = 'BookCoverLink';
+
 export const BookItemCover = styled.div`
   max-width: 80%;
   margin-bottom: 10px;
 `;
+
+BookItemCover.displayName = 'BookItemCover';
 
 export const BookItemImg = styled.img`
   width: auto;
@@ -53,9 +65,13 @@ export const BookItemImg = styled.img`
   max-width: 100%;
 `;
 
+BookItemImg.displayName = 'BookItemImg';
+
 export const BookItemSynopsis = styled.p`
   color: gray;
   font-size: 14px;
   text-align: justify;
   hyphens: auto;
 `;
+
+BookItemSynopsis.displayName = 'BookItemSynopsis';

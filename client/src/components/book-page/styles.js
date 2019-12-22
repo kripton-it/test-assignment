@@ -7,6 +7,8 @@ export const BookContainer = styled.article`
   flex-wrap: wrap;
 `;
 
+BookContainer.displayName = 'BookContainer';
+
 export const BookInfo = styled.div`
   width: 80%;
   display: flex;
@@ -15,10 +17,14 @@ export const BookInfo = styled.div`
   flex-direction: column;
 `;
 
+BookInfo.displayName = 'BookInfo';
+
 export const BookItemTitle = styled.h1`
   color: #2f4a8f;
   font-size: 1.6rem;
 `;
+
+BookItemTitle.displayName = 'BookItemTitle';
 
 export const BookItemAuthor = styled.h2`
   margin: 0;
@@ -29,16 +35,22 @@ export const BookItemAuthor = styled.h2`
   letter-spacing: 5px;
 `;
 
+BookItemAuthor.displayName = 'BookItemAuthor';
+
 export const BookItemCover = styled.div`
   width: 20%;
   margin-right: auto;
   display: flex;
 `;
 
+BookItemCover.displayName = 'BookItemCover';
+
 export const BookItemImg = styled.img`
   width: auto;
   max-width: 100%;
 `;
+
+BookItemImg.displayName = 'BookItemImg';
 
 export const BookItemSynopsis = styled.p`
   color: #2f4a8f;
@@ -46,10 +58,14 @@ export const BookItemSynopsis = styled.p`
   text-align: justify;
 `;
 
+BookItemSynopsis.displayName = 'BookItemSynopsis';
+
 export const BookItemDetails = styled.div`
   display: flex;
   align-items: center;
 `;
+
+BookItemDetails.displayName = 'BookItemDetails';
 
 export const BookItemRating = styled.div`
   width: 100px;
@@ -65,9 +81,13 @@ export const BookItemRating = styled.div`
   margin-right: 50px;
 `;
 
+BookItemRating.displayName = 'BookItemRating';
+
 export const BookItemVotes = styled.div`
   position: relative;
 `;
+
+BookItemVotes.displayName = 'BookItemVotes';
 
 export const BookItemLike = styled.div`
   cursor: ${props => props.upvoted ? "default" : "pointer"};
@@ -79,6 +99,8 @@ export const BookItemLike = styled.div`
   }
 `;
 
+BookItemLike.displayName = 'BookItemLike';
+
 export const BookItemVotesNumber = styled.div`
   position: absolute;
   top: 60%;
@@ -86,3 +108,5 @@ export const BookItemVotesNumber = styled.div`
   transform: translate(-50%, -50%);
   color: ${props => props.upvoted ? "gray" : "green"};
 `;
+
+BookItemVotesNumber.displayName = 'BookItemVotesNumber';

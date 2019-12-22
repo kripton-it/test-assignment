@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component: expect to render with path !== '/' 1`] = `
+<HeaderContainer>
+  <Logo>
+    <LogoLink
+      to="/"
+    >
+      Read . us
+    </LogoLink>
+  </Logo>
+  <Navigation>
+    <MenuList>
+      <MenuItem>
+        <MenuLink
+          href="#"
+        >
+          New
+        </MenuLink>
+      </MenuItem>
+      <MenuItem>
+        <MenuLink
+          href="#"
+        >
+          Non-fiction
+        </MenuLink>
+      </MenuItem>
+      <MenuItem>
+        <MenuLink
+          href="#"
+        >
+          Children
+        </MenuLink>
+      </MenuItem>
+      <MenuItem>
+        <MenuLink
+          href="#"
+        >
+          Fiction
+        </MenuLink>
+      </MenuItem>
+      <MenuItem>
+        <MenuLink
+          href="#"
+        >
+          Education
+        </MenuLink>
+      </MenuItem>
+    </MenuList>
+  </Navigation>
+</HeaderContainer>
+`;
+
+exports[`Header component: expect to render with path === '/' 1`] = `
+<HeaderContainer>
+  <Logo>
+    Read . us
+  </Logo>
+  <Navigation>
+    <MenuList>
+      <MenuItem>
+        <MenuLink
+          href="#"
+        >
+          New
+        </MenuLink>
+      </MenuItem>
+      <MenuItem>
+        <MenuLink
+          href="#"
+        >
+          Non-fiction
+        </MenuLink>
+      </MenuItem>
+      <MenuItem>
+        <MenuLink
+          href="#"
+        >
+          Children
+        </MenuLink>
+      </MenuItem>
+      <MenuItem>
+        <MenuLink
+          href="#"
+        >
+          Fiction
+        </MenuLink>
+      </MenuItem>
+      <MenuItem>
+        <MenuLink
+          href="#"
+        >
+          Education
+        </MenuLink>
+      </MenuItem>
+    </MenuList>
+  </Navigation>
+</HeaderContainer>
+`;

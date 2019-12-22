@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination component: expect to render for currentPage !== 1 and !== pageNumber 1`] = `
+<PaginationContainer>
+  <PrevButton
+    onClick={[Function]}
+  >
+    &lt;
+  </PrevButton>
+  <NextButton
+    onClick={[Function]}
+  >
+    &gt;
+  </NextButton>
+</PaginationContainer>
+`;
+
+exports[`Pagination component: expect to render for currentPage === 1 1`] = `
+<PaginationContainer>
+  <NextButton
+    onClick={[Function]}
+  >
+    &gt;
+  </NextButton>
+</PaginationContainer>
+`;
+
+exports[`Pagination component: expect to render for currentPage === pageNumber 1`] = `
+<PaginationContainer>
+  <PrevButton
+    onClick={[Function]}
+  >
+    &lt;
+  </PrevButton>
+</PaginationContainer>
+`;

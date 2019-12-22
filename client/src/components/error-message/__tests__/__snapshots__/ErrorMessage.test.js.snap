@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render ErrorMessage component 1`] = `
+<ErrorContainer>
+  <ErrorText>
+    Sorry, this page is broken
+  </ErrorText>
+</ErrorContainer>
+`;

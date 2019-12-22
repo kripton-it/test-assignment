@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render BookItem component 1`] = `
+<BookItemContainer>
+  <BookItemCover>
+    <BookCoverLink
+      to="/book/slug"
+    >
+      <BookItemImg
+        alt="title"
+        src="cover"
+      />
+    </BookCoverLink>
+  </BookItemCover>
+  <BookTitleLink
+    to="/book/slug"
+  >
+    <BookItemTitle>
+      title
+    </BookItemTitle>
+  </BookTitleLink>
+  <BookItemAuthor>
+    author
+  </BookItemAuthor>
+  <BookItemSynopsis>
+    synopsis
+  </BookItemSynopsis>
+</BookItemContainer>
+`;

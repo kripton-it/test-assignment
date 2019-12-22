@@ -6,6 +6,8 @@ export const PaginationContainer = styled.div`
   top: 45%;
 `;
 
+PaginationContainer.displayName = 'PaginationContainer';
+
 const Button = styled.button`
   background-color: transparent;
   border: none;
@@ -28,7 +30,11 @@ export const PrevButton = styled(Button)`
   left: 10px;
 `;
 
+PrevButton.displayName = 'PrevButton';
+
 export const NextButton = styled(Button)`
   position: absolute;
   right: 10px;
 `;
+
+NextButton.displayName = 'NextButton';

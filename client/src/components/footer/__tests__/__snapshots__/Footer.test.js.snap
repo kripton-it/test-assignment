@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render Footer component 1`] = `
+<FooterContainer>
+  <MenuList>
+    <MenuItem>
+      <MenuLink
+        href="#"
+      >
+        About
+      </MenuLink>
+    </MenuItem>
+    <MenuItem>
+      <MenuLink
+        href="#"
+      >
+        Privacy
+      </MenuLink>
+    </MenuItem>
+    <MenuItem>
+      <MenuLink
+        href="#"
+      >
+        Delivery
+      </MenuLink>
+    </MenuItem>
+  </MenuList>
+  <Copyright>
+    © Read.us, 2020
+  </Copyright>
+</FooterContainer>
+`;
