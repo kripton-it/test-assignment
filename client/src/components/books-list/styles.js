@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BooksListContainer = styled.div`
+export const BooksListContainer = styled.section`
   position: relative;
   background-color: #ffffff;
   width: 100%;

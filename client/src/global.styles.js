@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
   main {
     display: flex;
     flex-grow: 1;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 `;

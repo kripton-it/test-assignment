@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import * as Styles from './styles';
 
-// import { trim, maxSynopsisLength } from '../../utils';
+import like from './like.svg';
 
 class BookPage extends React.Component {
   constructor() {
@@ -39,16 +39,30 @@ class BookPage extends React.Component {
     if (hasError) {
       return <h1>something went wrong</h1>;
     }
-    const { title, author, cover, synopsis } = book;
+    const { title, author, cover, synopsis, rating, upvotes, upvoted } = book;
     return (
       <Styles.BookContainer>
-        <Styles.BookItemAuthor>{author}</Styles.BookItemAuthor>
-        <Styles.BookItemTitle>{title}</Styles.BookItemTitle>
-
-        <Styles.BookItemSynopsis>{synopsis}</Styles.BookItemSynopsis>
         <Styles.BookItemCover>
           <Styles.BookItemImg src={cover} alt={title} />
         </Styles.BookItemCover>
+        <Styles.BookInfo>
+          <Styles.BookItemAuthor>{author}</Styles.BookItemAuthor>
+          <Styles.BookItemTitle>{title}</Styles.BookItemTitle>
+          <Styles.BookItemSynopsis>{synopsis}</Styles.BookItemSynopsis>
+          <Styles.BookItemDetails>
+            <Styles.BookItemRating rating={rating}>
+              {rating}
+            </Styles.BookItemRating>
+            <Styles.BookItemVotes>
+              <Styles.BookItemLike upvoted={upvoted}>
+                <img src={like} width="130" alt="Like icon" />
+                <Styles.BookItemVotesNumber upvoted={upvoted}>
+                  {upvotes}
+                </Styles.BookItemVotesNumber>
+              </Styles.BookItemLike>
+            </Styles.BookItemVotes>
+          </Styles.BookItemDetails>
+        </Styles.BookInfo>
       </Styles.BookContainer>
     );
   }
