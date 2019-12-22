@@ -10,11 +10,15 @@ export const BookItemContainer = styled.li`
 `;
 
 export const BookLink = styled(Link)`
-  text-decoration: none;
+  color: yellow;
+  transition: all 0.5s;
+
+  &:hover {
+    color: red;
+  }
 `;
 
 export const BookItemTitle = styled.h1`
-  color: red;
   font-size: 1.2rem;
 `;
 

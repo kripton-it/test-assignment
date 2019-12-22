@@ -3,9 +3,12 @@ import { Route, Switch, Redirect } from "react-router-dom";
 
 import { BooksList, BookPage } from './components';
 
+import { GlobalStyle } from "./global.styles";
+
 function App() {
   return (
     <div>
+      <GlobalStyle />
       <Switch>
         <Route
           path="/book/:slug"
