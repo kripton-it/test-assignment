@@ -9,7 +9,7 @@ export const BookItemContainer = styled.li`
   align-items: center;
 `;
 
-export const BookLink = styled(Link)`
+export const BookTitleLink = styled(Link)`
   color: yellow;
   transition: all 0.5s;
 
@@ -25,6 +25,15 @@ export const BookItemTitle = styled.h1`
 export const BookItemAuthor = styled.h2`
   color: green;
   font-size: 1rem;
+`;
+
+export const BookCoverLink = styled(Link)`
+  opacity: 0.7;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export const BookItemCover = styled.div`

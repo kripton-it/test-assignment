@@ -12,13 +12,15 @@ class BookItem extends React.Component {
     return (
       <Styles.BookItemContainer>
         <Styles.BookItemAuthor>{author}</Styles.BookItemAuthor>
-        <Styles.BookLink to={url}>
+        <Styles.BookTitleLink to={url}>
           <Styles.BookItemTitle>{title}</Styles.BookItemTitle>
-        </Styles.BookLink>
+        </Styles.BookTitleLink>
 
         <Styles.BookItemSynopsis>{trimmedSynopsis}</Styles.BookItemSynopsis>
         <Styles.BookItemCover>
-          <Styles.BookItemImg src={cover} alt={title} />
+          <Styles.BookCoverLink to={url}>
+            <Styles.BookItemImg src={cover} alt={title} />
+          </Styles.BookCoverLink>
         </Styles.BookItemCover>
       </Styles.BookItemContainer>
     );
