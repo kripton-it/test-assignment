@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const BookItemContainer = styled.li`
-  outline: 1px solid green;
   padding: 25px;
   flex-basis: 25%;
   display: flex;

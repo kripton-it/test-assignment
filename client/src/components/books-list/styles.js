@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
-export const BooksListContainer = styled.ul`
+export const BooksListContainer = styled.div`
+  position: relative;
   background-color: #ffffff;
-  padding: 0 20px;
-  list-style: none;
   width: 100%;
-  margin: 0;
+`;
+
+export const BooksList = styled.ul`
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
+  padding: 0 20px;
 `;

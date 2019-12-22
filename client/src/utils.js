@@ -5,5 +5,7 @@ export const trim = (string, maxLength) => {
   if (length <= maxLength) {
     return string;
   }
-  return `${string.slice(0, maxLength - 3)}...`;
+  const trimmedString = string.slice(0, maxLength - 3);
+  const lastSpaceIndex = trimmedString.lastIndexOf(" ");
+  return `${trimmedString.slice(0, lastSpaceIndex)} ...`;
 }
