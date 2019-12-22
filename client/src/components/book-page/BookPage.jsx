@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-import { ErrorMessage } from '../index';
+import { ErrorMessage, Spinner } from '../index';
 
 import * as Styles from './styles';
 
@@ -36,7 +36,7 @@ class BookPage extends React.Component {
   render() {
     const { book, isLoading, hasError } = this.state;
     if (isLoading) {
-      return <h1>...loading</h1>;
+      return <Spinner />;
     }
     if (hasError) {
       return <ErrorMessage />;

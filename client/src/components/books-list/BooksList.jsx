@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-import { BookItem, Pagination, ErrorMessage } from '../index';
+import { BookItem, Pagination, ErrorMessage, Spinner } from '../index';
 
 import * as Styles from './styles';
 
@@ -41,7 +41,7 @@ class BooksList extends React.Component {
       return <ErrorMessage />;
     }
     if (isLoading) {
-      return <h1>...loading</h1>;
+      return <Spinner />;
     }
     const startBooxIndex = 4 * (currentPage - 1);
     const booksToShow = booksList.slice(startBooxIndex, startBooxIndex + 4);
