@@ -25,9 +25,10 @@ class BooksList extends React.Component {
     if (isLoading) {
       return <h1>...loading</h1>;
     }
+    const booksToShow = booksList.slice(0, 4);
     return (
       <Styles.BooksListContainer>
-        {booksList.map(book => <BookItem key={book.slug} book={book} />)}
+        {booksToShow.map(book => <BookItem key={book.slug} book={book} />)}
       </Styles.BooksListContainer>
     );
   }

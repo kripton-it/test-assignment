@@ -11,17 +11,17 @@ class BookItem extends React.Component {
     const trimmedSynopsis = trim(synopsis, maxSynopsisLength);
     return (
       <Styles.BookItemContainer>
-        <Styles.BookItemAuthor>{author}</Styles.BookItemAuthor>
-        <Styles.BookTitleLink to={url}>
-          <Styles.BookItemTitle>{title}</Styles.BookItemTitle>
-        </Styles.BookTitleLink>
-
-        <Styles.BookItemSynopsis>{trimmedSynopsis}</Styles.BookItemSynopsis>
         <Styles.BookItemCover>
           <Styles.BookCoverLink to={url}>
             <Styles.BookItemImg src={cover} alt={title} />
           </Styles.BookCoverLink>
         </Styles.BookItemCover>
+        <Styles.BookTitleLink to={url}>
+          <Styles.BookItemTitle>{title}</Styles.BookItemTitle>
+        </Styles.BookTitleLink>
+        <Styles.BookItemAuthor>{author}</Styles.BookItemAuthor>
+
+        <Styles.BookItemSynopsis>{trimmedSynopsis}</Styles.BookItemSynopsis>
       </Styles.BookItemContainer>
     );
   }

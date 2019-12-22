@@ -3,28 +3,35 @@ import { Link } from "react-router-dom";
 
 export const BookItemContainer = styled.li`
   outline: 1px solid green;
-  flex-basis: 20%;
+  padding: 25px;
+  flex-basis: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 export const BookTitleLink = styled(Link)`
-  color: yellow;
+  color: #000000;
+  opacity: 0.8;
   transition: all 0.5s;
 
   &:hover {
-    color: red;
+    opacity: 1;
   }
 `;
 
 export const BookItemTitle = styled.h1`
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
   font-size: 1.2rem;
 `;
 
 export const BookItemAuthor = styled.h2`
-  color: green;
+  color: #777777;
   font-size: 1rem;
+  margin: 0;
+  padding: 0;
 `;
 
 export const BookCoverLink = styled(Link)`
@@ -37,15 +44,19 @@ export const BookCoverLink = styled(Link)`
 `;
 
 export const BookItemCover = styled.div`
-  width: 70%;
-  margin-top: auto;
+  max-width: 80%;
+  margin-bottom: 10px;
 `;
 
 export const BookItemImg = styled.img`
+  width: auto;
+  height: 260px;
   max-width: 100%;
-  height: auto;
 `;
 
 export const BookItemSynopsis = styled.p`
   color: gray;
+  font-size: 14px;
+  text-align: justify;
+  hyphens: auto;
 `;
