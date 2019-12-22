@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import { BookItem } from '../index';
 
-import { BooksListContainer } from './styles';
+import * as Styles from './styles';
 
 class BooksList extends React.Component {
   constructor() {
@@ -26,9 +26,9 @@ class BooksList extends React.Component {
       return <h1>...loading</h1>;
     }
     return (
-      <BooksListContainer>
+      <Styles.BooksListContainer>
         {booksList.map(book => <BookItem key={book.slug} book={book} />)}
-      </BooksListContainer>
+      </Styles.BooksListContainer>
     );
   }
 }

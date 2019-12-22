@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BookContainer = styled.div`
-  outline: 1px solid green;
+  background-color: #ffffff;
   /* display: flex;
   flex-direction: column;
   align-items: center; */

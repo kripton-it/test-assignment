@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BooksListContainer = styled.ul`
-  outline: 1px solid red;
+  background-color: #ffffff;
   list-style: none;
   width: 100%;
   margin: 0;
