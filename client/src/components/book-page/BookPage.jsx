@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
+import { ErrorMessage } from '../index';
+
 import * as Styles from './styles';
 
 import like from './like.svg';
@@ -37,7 +39,7 @@ class BookPage extends React.Component {
       return <h1>...loading</h1>;
     }
     if (hasError) {
-      return <h1>something went wrong</h1>;
+      return <ErrorMessage />;
     }
     const { title, author, cover, synopsis, rating, upvotes, upvoted } = book;
     return (

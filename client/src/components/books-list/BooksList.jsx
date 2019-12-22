@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-import { BookItem, Pagination } from '../index';
+import { BookItem, Pagination, ErrorMessage } from '../index';
 
 import * as Styles from './styles';
 
@@ -10,22 +10,36 @@ class BooksList extends React.Component {
     super();
     this.state = {
       booksList: [],
-      isLoading: true,
+      isLoading: false,
+      hasError: false,
       currentPage: 0,
       pageNumber: 0
     };
   }
   async componentDidMount() {
-    const response = await axios.get("http://localhost:5000/books");
     this.setState({
-      booksList: response.data.books,
-      isLoading: false,
-      currentPage: 1,
-      pageNumber: Math.ceil(response.data.books.length / 4)
+      isLoading: true
     });
+    try {
+      const response = await axios.get("http://localhost:5000/books");
+      this.setState({
+        booksList: response.data.books,
+        isLoading: false,
+        currentPage: 1,
+        pageNumber: Math.ceil(response.data.books.length / 4)
+      });
+    } catch (error) {
+      this.setState({
+        hasError: true,
+        isLoading: false
+      });
+    }
   }
   render() {
-    const { booksList, isLoading, currentPage, pageNumber } = this.state;
+    const { booksList, isLoading, hasError, currentPage, pageNumber } = this.state;
+    if (hasError) {
+      return <ErrorMessage />;
+    }
     if (isLoading) {
       return <h1>...loading</h1>;
     }
