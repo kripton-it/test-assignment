@@ -10,7 +10,7 @@
     "client": "cd client && yarn start",
     "server": "cd server && yarn server",
     "build": "cd client && npm run build",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "test-client": "cd client && yarn test"
   },
   "repository": {
